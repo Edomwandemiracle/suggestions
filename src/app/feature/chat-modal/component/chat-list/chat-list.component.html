@@ -1,0 +1,18 @@
+<div
+  data-testid="message-box"
+  class="message"
+  *ngFor="let message of messages"
+  (click)="selectTopic(message)"
+  [ngClass]="{
+    from: message.author === 'bot',
+    to: message.author === 'user',
+    disable: isDisabled || message.author === 'user'
+  }"
+>
+  {{ message?.title }}
+</div>
+
+<div data-testid="thanks-you" class="message from" *ngIf="isDisabled">
+  Thank you
+</div>
+

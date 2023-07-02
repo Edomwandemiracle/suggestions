@@ -1,0 +1,41 @@
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#766DF4 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#766DF4);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+  
+  @keyframes s3{ 
+    100%{transform: rotate(1turn)}
+  }
+
+  .modal-instruction{
+    font-size: 14px;
+    color: #363636;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .chat-button{
+    color:#fff;
+    margin-left: 2rem;
+  }
+
+  .chat-icon-btn{
+    position: relative;
+    height: 50px; 
+    width: 50px; 
+    background: red; 
+    border-radius: 100%;
+  }
+  .chat-icon-btn > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 20px;
+  }
