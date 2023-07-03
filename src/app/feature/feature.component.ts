@@ -12,8 +12,4 @@ export class FeatureComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  isCurrentRoute(route: string): boolean {
-    return this.router.url === route;
-  }
 }

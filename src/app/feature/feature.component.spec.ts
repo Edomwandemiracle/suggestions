@@ -26,27 +26,4 @@ describe('FeatureComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should display welcome message', () => {
-    const welcomeMessage = fixture.nativeElement.querySelector('h1');
-    expect(welcomeMessage.textContent).toContain('Welcome To ChatSug');
-  });
-
-  it('should navigate to /chat on link click', () => {
-    const link = fixture.nativeElement.querySelector('a');
-    link.click();
-
-    fixture.detectChanges();
-
-    const routerOutlet = fixture.nativeElement.querySelector('router-outlet');
-    expect(routerOutlet).toBeTruthy();
-  });
-
-  it('should show the header container when current route is "/"', () => {
-    spyOn(component, 'isCurrentRoute').and.returnValue(true);
-    fixture.detectChanges();
-
-    const headerContainer = fixture.nativeElement.querySelector('.header-container');
-    expect(headerContainer).toBeTruthy();
-  });
 });

@@ -1,0 +1,13 @@
+.landing-page{
+    height: 100vh; 
+    display: flex;
+}
+.header-container {
+    display: flex; 
+    align-items: center;
+}
+.landing-img-bg{
+    background: url('../../../assets/background-app-chat-featured.webp') no-repeat;
+    width: 100%;
+    background-size: cover;
+}
