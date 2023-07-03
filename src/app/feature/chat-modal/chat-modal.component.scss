@@ -1,8 +1,7 @@
-.chat-modal{
-  background-color: #79a7d3; 
+.chat-modal{ 
   background: url('../../../assets/bg-chat-customer-experience.png') no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100vh;;
 }
 .custom-loader {
     width: 50px;
@@ -30,6 +29,7 @@
   }
   .chat-button{
     color:#fff;
+    padding-top: 3rem;
     margin-left: 2rem;
     cursor: pointer;
   }
